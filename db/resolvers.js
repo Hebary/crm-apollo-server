@@ -14,7 +14,7 @@ const createToken = (user, secret, expiresIn) => {
     return jwt.sign( { id, email, name, lastname }, secret, { expiresIn } )
 }
 
-// Resolvers : funciones responsables de retornar lo que tengo en el schemma (mismos nombres que en el schemma)
+// Resolvers 
 
 const resolvers = {
     
@@ -300,7 +300,7 @@ const resolvers = {
 
             const { client } = input
             
-    //         check if client exists
+    
             let clientExists = await Client.findById(client);
 
             if(!clientExists) {
