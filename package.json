@@ -1,0 +1,27 @@
+{
+  "name": "crm-backendv2",
+  "version": "1.0.0",
+  "description": "crm-backend using apollo n graphql",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "start":"node index.js"
+  },
+  "keywords": [
+    "crm"
+  ],
+  "author": "Bernardo D'Addario",
+  "license": "ISC"
+  ,
+  "dependencies": {
+    "apollo-server": "^3.10.4",
+    "bcrypt": "5.1.0",
+    "dotenv": "16.0.3",
+    "jsonwebtoken": "8.5.1",
+    "mongoose": "^6.7.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+
+}
