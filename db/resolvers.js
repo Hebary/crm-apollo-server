@@ -28,11 +28,7 @@ const createToken = (user, secret, expiresIn) => {
     })
 }
 
-<<<<<<< HEAD
-// Resolvers : 
-=======
 // Resolvers 
->>>>>>> 6487061b66e9b438704bccdcf76a8e0e19eea435
 
 const resolvers = {
 
@@ -365,17 +361,9 @@ const resolvers = {
         },
         newOrder: async (_, { input }, ctx) => {
 
-<<<<<<< HEAD
-            const {
-                client
-            } = input
-
-            //         check if client exists
-=======
             const { client } = input
             
     
->>>>>>> 6487061b66e9b438704bccdcf76a8e0e19eea435
             let clientExists = await Client.findById(client);
 
             if (!clientExists) {
@@ -473,9 +461,5 @@ const resolvers = {
             return "Order Deleted"
         }
     }
-<<<<<<< HEAD
 }
 module.exports = resolvers;
-=======
-module.exports = resolvers;
->>>>>>> 6487061b66e9b438704bccdcf76a8e0e19eea435
