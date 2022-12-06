@@ -13,10 +13,11 @@ const server = new ApolloServer({
     typeDefs,
     resolvers, 
     context: ({req}) => {
+
         const token = req.headers['authorization'] || '';
         if(token) {
             try {
-                const user = jwt.verify(token.replace('Bearer ', ''), process.env.SECRET );
+                const user = jwt.verify(token.replace('Bearer ',''), process.env.SECRET );
                 return {
                     user
                 }
